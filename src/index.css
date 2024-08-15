@@ -11,3 +11,17 @@ body, input, button {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color-principal);
 }
+hr {
+  border: 1px solid var(--highlighted-color);
+  margin: 16px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 177, 177);
+  border-radius: 4px;
+}
