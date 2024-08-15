@@ -1,0 +1,90 @@
+.description {
+    color: var(--font-color-principal);
+}
+.body, .abilities {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.body > li {
+    background: rgba(0, 0, 0, .1);
+}
+.body > li, .abilities > li {
+    flex: 1;
+    border: 3px solid var(--highlighted-color);
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.text > h3 {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 800;
+}
+.text > span {
+    font-weight: 600;
+}
+.text-description {
+    font-weight: 600;
+    padding: 8px;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.stats > li {
+    display: flex;
+    gap: 4px;
+}
+.stats > li > h4 {
+    width: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.stats > li > p {
+    font-weight: 700;
+    background: rgba(0, 0, 0, .25);
+    padding: 2px 4px;
+    border-radius: 8px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+}
+.stats > li > div {
+    background-color: rgba(0, 0, 0, .5);
+    flex: 1;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.stats > li > div > span {
+    position: absolute;
+    height: 100%;
+
+}
+.effects > h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.effects > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 8px;
+}
+.evolutions > ul {
+    display: flex;
+    padding: 8px 0;
+    overflow-x: auto;
+}
+.evolutions > ul > li {
+    margin: 0 auto;
+}

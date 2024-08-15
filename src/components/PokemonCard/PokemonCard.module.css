@@ -1,0 +1,50 @@
+.card {
+    border: 3px solid var(--highlighted-color);
+    display: flex;
+    justify-content: space-between;
+    min-width: 304px;
+    padding: 8px;
+    height: 128px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all .2s;
+    cursor: pointer;
+    box-sizing: border-box;
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px var(--highlighted-color);
+
+}
+.card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.card > div > span {
+    background: var(--highlighted-color);
+    padding: 4px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+}
+.card > div > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.card > div > ul {
+    display: flex;
+    gap: 8px;
+}
+.card > figure > img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.5);
+}

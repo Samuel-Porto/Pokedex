@@ -1,0 +1,44 @@
+@keyframes background_appear {
+    from {background: rgba(0, 0, 0, 0);}
+}
+@keyframes span_appear {
+    from {bottom: -100%;}
+}
+@keyframes icon_appear {
+    from {top: 100%;}
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .25);
+    animation: background_appear .5s;
+}
+.popup > img {
+    position: absolute;
+    height: 128px;
+    width: 100vw;
+    object-fit: contain;
+    image-rendering: pixelated;
+    transform: translateY(48px);
+    z-index: 1;
+    animation: icon_appear .5s;
+    top: 0;
+    
+}
+.popup > span {
+    animation: span_appear .5s;
+    padding: 64px 16px 16px 16px;
+    box-sizing: border-box;
+    border-radius: 32px 32px 0 0;
+    background: white;
+    height: calc(100vh - 128px);
+    overflow: hidden;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+    overflow-y: auto;
+}

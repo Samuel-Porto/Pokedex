@@ -1,0 +1,26 @@
+.card {
+    border: 3px solid var(--highlighted-color);
+    border-radius: 64px;
+    box-shadow: 0 4px var(--highlighted-color);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s;
+    margin: 4px;
+}
+.card:hover {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+.card > figure {
+    height: 64px;
+    width: 64px;
+}
+.card > figure > img {
+    height: 100%;
+    width: 100%;
+}
+.current {
+    background: var(--highlighted-color);
+    box-shadow: none;
+    transform: translateY(4px);
+}
